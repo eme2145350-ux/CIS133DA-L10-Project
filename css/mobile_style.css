@@ -1,0 +1,133 @@
+/** 
+    Author: EME2145350
+    Course: CIS133DA - Section 27487
+    Lesson: 10
+    Breakpoint: This stylesheet is loaded by the browser for mobile devices smaller than 450px (max-width: 449px).
+**/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+}
+
+/* Removed top margin on wrapper because navigation is stacked above the header */
+#wrapper {
+    background-color: #ddd;
+    margin-top: 0;
+}
+
+/* Header Styles */
+header {
+    background: black url(../images/background.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+/* Navigation Bar Styles - Stacked links vertically and removed floats so every link is clearly visible and easy to tap on mobile */
+nav {
+    position: static;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #2d3437;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+}
+
+nav a:hover {
+    background-color: #135367;
+    color: #ffffff;
+}
+
+nav .right {
+    background-color: #E1693D;
+    color: #000000;
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+nav .active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Main Styles - Set width to 100% so main fills the full mobile viewport */
+main {
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Card Styles - Displayed cards at full width and centered the image above text so content is not cramped on narrow mobile screens */
+.card {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 10px 0;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.card img {
+    float: none;
+    display: block;
+    background-color: #E1693D;
+    padding: 15px;
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px auto;
+}
+
+.card h2 {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 10px 15px 5px 15px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.9em;
+    margin: 0;
+    padding: 5px 15px 15px 15px;
+}
+
+/* Footer Styles - Changed background-color to #8b3a1e to visually confirm the mobile media query is active */
+footer {
+    background-color: #8b3a1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+}
